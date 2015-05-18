@@ -25,7 +25,7 @@ WORKDIR /data/geminabox/conf
 COPY conf/config.ru /data/geminabox/conf/config.ru
 COPY conf/unicorn.rb /data/geminabox/conf/unicorn.rb
 
-# Declare default env variable
+# Declare default env variables
 ENV RUBYGEMS_PROXY true
 ENV ALLOW_REMOTE_FAILURE true
 ENV WORKER_PROCESSES 2
