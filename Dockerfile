@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM base:latest
+FROM ashangit/base:latest
 MAINTAINER Nicolas Fraison <nfraison@yahoo.fr>
 
 # Deploy geminabox.
