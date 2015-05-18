@@ -6,10 +6,13 @@
 FROM ashangit/base:latest
 MAINTAINER Nicolas Fraison <nfraison@yahoo.fr>
 
+ENV GEMINABOX_VERSION 0.12.4
+ENV UNICORN_VERSION 4.9.0
+
 # Deploy geminabox.
 RUN yum install ruby ruby-devel gcc make -y && \
-    gem install geminabox && \
-    gem install unicorn
+    gem install geminabox -v ${GEMINABOX_VERSION} && \
+    gem install unicorn -v ${UNICORN_VERSION}
 
 # Remove compiler package
 RUN yum remove ruby-devel gcc make -y
