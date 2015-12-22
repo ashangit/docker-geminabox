@@ -7,7 +7,7 @@ FROM ashangit/base:latest
 MAINTAINER Nicolas Fraison <nfraison@yahoo.fr>
 
 ENV GEMINABOX_VERSION 0.12.4
-ENV UNICORN_VERSION 5.0.0
+ENV UNICORN_VERSION 5.0.1
 
 # Deploy geminabox.
 RUN yum install ruby ruby-devel gcc make -y && \
